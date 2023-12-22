@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE GATE 2025 Study Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Study Routine</h1>
+        <div class="center-container">
+            <div class="card">
+              <div class="countdown" id="countdown"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="schedule">
+            <div class="center-container">
+            <div class="card">
+            <h2>Daily Study Schedule</h2>
+            <button id="addButton">Add New</button>
+            <br>
+            <br>
+            <form id="studyForm" style="display: none;">
+                <label for="dayInput">Day:</label>
+                <input type="text" id="dayInput" required>
+                <br>
+
+                <label for="subjectInput">Subject:</label>
+                <input type="text" id="subjectInput" required>
+
+                <br>
+                <label for="timeInput">Time:</label>
+                <input type="text" id="timeInput" placeholder="e.g., 9:00 AM - 11:00 AM" required>
+                <br>
+                <button type="submit" id="addButton">Add to Schedule</button>
+            </form>
+            <div id="studySchedule">
+                <!-- JavaScript will dynamically populate this section -->
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
